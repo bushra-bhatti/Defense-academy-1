@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="hero">
+            <div id="nav">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">Defense<span class="logo-accent">Academy</span></span>
+                </div>
+                <div class="menu-container">
+                    <button class="menu-btn" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="heading">
+                <h1>Defense</h1>
+                <h1 id="secondh1">Academy</h1>
+            </div>
+        </div>
+        <div id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Welcome to <strong>Defense Academy</strong>, where we empower individuals and organizations with the knowledge and skills to defend against cyber threats.</p>
+                <p>Our mission is to create a safer digital world through comprehensive training and education. We believe that cybersecurity is not just a skill—it's a responsibility.</p>
+                <p>Join us and become part of the next generation of cyber defenders who will protect businesses, governments, and communities from evolving digital threats.</p>
+                <p class="motto">"Empowering Minds, Securing Futures"</p>
+            </div>
+        </div>
+        <div id="courses">
+            <h2>Courses</h2>
+            <div class="course">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400" alt="Cybersecurity Basics" class="course-image">
+                <h3>Introduction to Cybersecurity</h3>
+                <p>Learn the basics of cybersecurity, including threats, vulnerabilities, and basic defense strategies.</p>
+                <button class="details-btn" id="course1-btn">View Details</button>
+            </div>
+            <div class="course">
+                <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=400" alt="Ethical Hacking" class="course-image">
+                <h3>Advanced Ethical Hacking</h3>
+                <p>Dive deep into penetration testing and ethical hacking techniques to identify and mitigate security risks.</p>
+                <button class="details-btn" id="course2-btn">View Details</button>
+            </div>
+            <div class="course">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400" alt="Network Security" class="course-image">
+                <h3>Network Security</h3>
+                <p>Master the principles of securing networks, firewalls, and intrusion detection systems.</p>
+                <button class="details-btn" id="course3-btn">View Details</button>
+            </div>
+        </div>
+        <!-- Modal for Course 1 -->
+        <div id="course1-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="course1-modal">&times;</span>
+                <h2>Introduction to Cybersecurity</h2>
+                <p><strong>Duration:</strong> 4 weeks</p>
+                <p><strong>Level:</strong> Beginner</p>
+                <p><strong>Description:</strong> This course covers the fundamentals of cybersecurity, including common threats like viruses, malware, and phishing. You'll learn about basic security practices, password management, and how to protect personal data.</p>
+                <p><strong>Topics:</strong></p>
+                <ul>
+                    <li>Understanding Cyber Threats</li>
+                    <li>Basic Defense Strategies</li>
+                    <li>Password Security</li>
+                    <li>Data Protection</li>
+                </ul>
+                <button>Enroll Now</button>
+            </div>
+        </div>
+        <!-- Modal for Course 2 -->
+        <div id="course2-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="course2-modal">&times;</span>
+                <h2>Advanced Ethical Hacking</h2>
+                <p><strong>Duration:</strong> 8 weeks</p>
+                <p><strong>Level:</strong> Advanced</p>
+                <p><strong>Description:</strong> Master the art of ethical hacking with hands-on training in penetration testing, vulnerability assessment, and security auditing. Learn to think like a hacker to better defend systems.</p>
+                <p><strong>Topics:</strong></p>
+                <ul>
+                    <li>Penetration Testing Techniques</li>
+                    <li>Vulnerability Scanning</li>
+                    <li>Exploitation Methods</li>
+                    <li>Reporting and Mitigation</li>
+                </ul>
+                <button>Enroll Now</button>
+            </div>
+        </div>
+        <!-- Modal for Course 3 -->
+        <div id="course3-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="course3-modal">&times;</span>
+                <h2>Network Security</h2>
+                <p><strong>Duration:</strong> 6 weeks</p>
+                <p><strong>Level:</strong> Intermediate</p>
+                <p><strong>Description:</strong> Dive into network security principles, including firewalls, VPNs, intrusion detection systems, and secure network architecture. Protect your organization's network from cyber attacks.</p>
+                <p><strong>Topics:</strong></p>
+                <ul>
+                    <li>Firewall Configuration</li>
+                    <li>VPN and Encryption</li>
+                    <li>Intrusion Detection</li>
+                    <li>Network Monitoring</li>
+                </ul>
+                <button>Enroll Now</button>
+            </div>
+        </div>
+        <!-- Register Section -->
+        <div id="register">
+            <h2>Register</h2>
+            <div class="register-container">
+                <form class="register-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+                <p class="register-link">Already have an account? <a href="#login">Login here</a></p>
+            </div>
+        </div>
+        <!-- Login Section -->
+        <div id="login">
+            <h2>Login</h2>
+            <div class="login-container">
+                <form class="login-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <p class="login-link">Don't have an account? <a href="#register">Register here</a></p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>&copy; 2025 Defense Academy. All rights reserved.</p>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+</html>
